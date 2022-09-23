@@ -1,0 +1,18 @@
+
+body{
+    background-color: rgb(243, 190, 190);
+    font-family: 'Comfortaa';
+}
+
+.kilig img{
+    width: 200px;
+}
+
+.kilig{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:3em;
+}
+
