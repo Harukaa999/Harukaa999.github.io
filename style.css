@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Comfortaa;   
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.container{
+    width: 1280px; 
+    margin: 80px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: #262626;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.container .box .imgBox{
+    position: relative;
+    overflow: hidden;
+}
+
+.container .box .imgBox img{
+    max-width: 100%;
+    transition: transform 2s;
+}
+
+.container .box:hover .imgBox img{
+    transform: scale(1.2);
+}
+
+.container .box .details{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, .4);
+    transform: scaleY(0);
+    transition: transform .5s;
+    border-radius: 20px ;
+}
+
+.container .box:hover .details{
+    transform: scaleY(1);
+}
+
+.container .box .details .content{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    color: aliceblue;
+}
+
+.container .box .details .content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: pink;
+}
+
+.container .box .details .content p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+p{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+
+.p1{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 50px;
+    margin-left: 350px;
+    margin-right: 350px;
+    font-size: 12px;
+}
